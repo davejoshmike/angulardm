@@ -1,0 +1,5 @@
+{
+	"NODE_ENV": "dev",
+	"HOSTNAME": "localhost",
+	"PORT": "8080"
+}

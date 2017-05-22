@@ -1,0 +1,22 @@
+{
+  "name": "AngularDM",
+  "version": "0.0.1",
+  "engines": {
+    "node": "6.10.0"
+  },
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "David Michel",
+  "license": "MIT",
+  "repository": "www.github.com/davejoshmike/angulardm.git",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angularjs": "0.0.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1"
+  }
+}
