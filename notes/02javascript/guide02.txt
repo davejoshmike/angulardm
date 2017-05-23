@@ -1,0 +1,60 @@
+Guide 02: JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript#)
+	1. Explain the following concepts:
+		a. objects are treated as functions
+		A language is said to have first-class functions when functions are treated like an object/variable. Can be
+			1. passed as an argument
+			2. can be returned
+			3. can be assigned as a value
+
+		b. closures
+
+		c. prototype-based inheritance/polymorphism
+
+		d. 'strict' mode
+
+		e. 'this' keyword
+
+	2. Compare and contrast '==' and '===' (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness):
+
+	3. Compare and contrast Java and JavaScript
+
+	4. Compare and contrast ES5 and ES6
+
+	5. What JavaScript implementation will we be using?
+	
+	
+	6. Memory Management/Life Cycle (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management):
+		1. allocate the memory you need (implicit)
+		2. use the allocated memory (always explicit)
+		3. release the allocated memory (implicit)
+		
+		var n = 123; // memory allocated and value declared in the same line
+		
+		function f(a) {
+			return a+2;
+		} // memory allocated for a function (callable object)
+		
+		// function expression also allocates an object
+		someElement.addEventListener('click', function() {
+			someElement.style.backgroundColor = 'blue';
+		}, false);
+
+		var date = new Date(); // allocates memory for an empty (but initialized) date object
+		
+		JavaScript Garbage Collector (Naive):
+			a. Reference Counting garbage collectors
+				i. "An object has no other object referencing to it"
+					An object is trash if there is zero references pointing at it
+				ii. Cycle limitations (memory leaks in reference-counting garbage collectors)
+					local scoped variables are set to each other then the scope is exited.
+					However since those variables still has references (to each other),
+					they will not be trashed
+					Cycles causes a 'memory leak' in reference-counting garbage collectors
+			b. Mark and sweep garbage collecting
+				i. "An object is unreachable"
+					an object must be reachable from the root object (global)
+					The object starts from the root and finds the objects referenced by the root object recursively. Any non-reachable objects will be trashed.
+				ii. Cycles are no longer a problem
+
+				iii. However, certain objects that are explicity unreachable may be unknowningly trashed (Doesn't often happen in practice).
+								

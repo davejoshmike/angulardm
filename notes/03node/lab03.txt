@@ -1,0 +1,4 @@
+Exercise 3.2:
+  a. app.use(express.static('app'));
+    by saying static, express will keep serving up all files under app/. The files are served up everytime a request is made, meaning that any updates to the files can be seen when changes are made. The static part means that there is only one instance of the files being served from the given directory.
+    

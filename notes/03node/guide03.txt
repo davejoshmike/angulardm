@@ -1,0 +1,15 @@
+Guide 3 (Node):
+	Node.js:
+	1. what makes node attractive for web servers?
+	2. Is node better for I/O bound or CPU work
+	NPM:
+	aweeeeesome
+	package.json - defines all the dependencies, app name, versions, scripts, etc. pretty awesome.
+	global vs local	
+
+	Express:
+	Listens and responds to http requests.
+
+	IIS is the Microsoft equivalent of Node/Express. Similar to Glassfish as well with minor differences.
+
+    
