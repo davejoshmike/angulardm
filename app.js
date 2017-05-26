@@ -1,9 +1,10 @@
 /**
-  * Reads the config files and starts the express server
+  * Reads the config files and starts the express server,
+  * serving files from public/...
   */
-// var config = require('config');
-//var path = require('path');
 var express = require('express');
+
+// Serve static files from public/...
 var app = express();
 app.use(express.static('public'));
 
@@ -11,16 +12,13 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');S
 });
 
-// var hostname = config.util.getEnv('HOSTNAME');
-// var portenv = config.util.getEnv('PORT');
-// console.log('Host:' + hostname);
-// console.log('Port: ' + portenv);
+// Load variables from config
+var config = require('config');
 
-var server = app.listen(process.env.PORT || 8080, function() {
-  // var server = app.listen(process.env.PORT || 8080, function() {
-  // var host = server.address().address;
-  // var port = server.address().port;
-  // console.log('server Host:' + host);
-  // console.log('server Port: ' + port);
+var hostname = config.get('HOSTNAME');
+var port = config.get('PORT');
+
+// Start the server
+var server = app.listen(port || 8080, function() {
   console.log("Example app listening on port: " + server.address().port);
 });
