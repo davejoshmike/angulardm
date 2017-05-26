@@ -1,0 +1,20 @@
+/**
+ * CSS for the main index page
+ */
+.main-view {
+  display: block;
+}
+
+.code-block {
+  border: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: grey;
+  color: purple;
+  text-align: left;
+  font-style: italic;
+  background-color: tan;
+  padding: 30px;
+  margin-right:30px;
+  /*font: 'Times New Roman'; */
+}

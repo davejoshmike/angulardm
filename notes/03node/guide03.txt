@@ -1,15 +1,20 @@
 Guide 3 (Node):
 	Node.js:
-	1. what makes node attractive for web servers?
-	2. Is node better for I/O bound or CPU work
+		1. what makes node attractive for web servers?
+		2. Is node better for I/O bound or CPU work
+
 	NPM:
-	aweeeeesome
-	package.json - defines all the dependencies, app name, versions, scripts, etc. pretty awesome.
-	global vs local	
+		aweeeeesome
+		package.json - defines all the dependencies, app name, versions, scripts, etc. pretty awesome.
+		global vs local
 
 	Express:
-	Listens and responds to http requests.
+		1. static keyword:
+		all images, css, (client-side) javascript, html files that do not get changed or modified.
 
-	IIS is the Microsoft equivalent of Node/Express. Similar to Glassfish as well with minor differences.
+		2. Function:
+		Listens and responds to http requests.
+	
+		3. Equivalents: 
+		IIS is the Microsoft equivalent of Node/Express. Similar to Glassfish as well with minor differences.
 
-    

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DM Site</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="navbar">
+    </div>
+    <div class="main-view">
+      <ol>
+        <h2>Guide 3 (Node):</h2>
+        <hr />
+        <ol>
+          Node.js:
+      		<li>
+            what makes node attractive for web servers?
+          </li>
+      		<li>
+            Is node better for I/O bound or CPU work
+          </li>
+        </ol>
+        <br />
+        <ul>
+          NPM:
+    		  <li>
+            aweeeeesome
+          </li>
+          <li>
+    		    package.json - defines all the dependencies, app name, versions, scripts, etc. pretty awesome.
+          </li>
+          <li>
+            global vs local
+          </li>
+        </ul>
+        <br />
+        <ol>
+        	Express:
+          <li>
+            static keyword:
+            <ul>
+              <li>
+                all images, css, (client-side) javascript, html files that do not get changed or modified.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Function:
+            <ul>
+               <li>
+        		    Listens and responds to http requests.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Equivalents:
+            <ul>
+              <li>
+        		    IIS is the Microsoft equivalent of Node/Express. Similar to Glassfish as well with minor differences.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <!-- Note on the static keyword -->
+        <br />
+        <h2>Note:</h2>
+        <hr />
+        <p>
+          By using the static keyword
+          <br />
+          ex:
+          <div class="code-block">
+            var express = require('express');
+            <br />
+            var app = express();
+            <br />
+            app.use(express.static('public'));</div><br />
+          we are defining the area in the filesystem that serves up imgs, javascript (client side), html, css, etc., but no server-side code. Essentially, the '<strong>public</strong>' folder holds only things that will potentially be served up to the client.
+        </p>
+      </ol>
+    </div>
+    <footer></footer>
+    <script>//js here or specify src="script.js"</script>
+  </body>
+</html>
