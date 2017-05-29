@@ -7,14 +7,29 @@
 
 .code-block {
   border: solid;
-  border-width: thin;
+  border-width: thin;;
   border-radius: 10px;
-  border-color: grey;
+  border-color: purple;
+  box-shadow: -4px 4px;
   color: purple;
   text-align: left;
   font-style: italic;
   background-color: tan;
   padding: 30px;
   margin-right:30px;
+  word-wrap: break-word;
+  /*font: 'Times New Roman'; */
+}
+
+.custom-content {
+  border: solid;
+  border-width: thin;
+  border-radius: 30px;
+  border-color: grey;
+  box-shadow: -5px -5px;
+  text-align: left;
+  font-style: italic;
+  padding: 30px;
+  margin:30px;
   /*font: 'Times New Roman'; */
 }

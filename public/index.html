@@ -4,82 +4,94 @@
     <meta charset="utf-8">
     <title>DM Site</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
   <body>
+    <!-- Jquery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <div class="navbar">
     </div>
     <div class="main-view">
-      <ol>
-        <h2>Guide 3 (Node):</h2>
-        <hr />
+      <!-- <button data-toggle="collapse" data-target="#guide03">
+        <h2>Guide 03</h2>
+      </button> -->
+      <a data-toggle="collapse" data-target="#guide03" href="#guide03">
+        <h3>Guide 03:</h3>
+      </a>
+      <div class="collapse custom-content" id="guide03">
         <ol>
-          Node.js:
-      		<li>
-            what makes node attractive for web servers?
-          </li>
-      		<li>
-            Is node better for I/O bound or CPU work
-          </li>
-        </ol>
-        <br />
-        <ul>
-          NPM:
-    		  <li>
-            aweeeeesome
-          </li>
-          <li>
-    		    package.json - defines all the dependencies, app name, versions, scripts, etc. pretty awesome.
-          </li>
-          <li>
-            global vs local
-          </li>
-        </ul>
-        <br />
-        <ol>
-        	Express:
-          <li>
-            static keyword:
-            <ul>
-              <li>
-                all images, css, (client-side) javascript, html files that do not get changed or modified.
-              </li>
-            </ul>
-          </li>
-          <li>
-            Function:
-            <ul>
-               <li>
-        		    Listens and responds to http requests.
-              </li>
-            </ul>
-          </li>
-          <li>
-            Equivalents:
-            <ul>
-              <li>
-        		    IIS is the Microsoft equivalent of Node/Express. Similar to Glassfish as well with minor differences.
-              </li>
-            </ul>
-          </li>
-        </ol>
-
-        <!-- Note on the static keyword -->
-        <br />
-        <h2>Note:</h2>
-        <hr />
-        <p>
-          By using the static keyword
+          <h2>Guide 03 (Node):</h2>
+          <hr />
+          <ol>
+            Node.js:
+        		<li>
+              what makes node attractive for web servers?
+            </li>
+        		<li>
+              Is node better for I/O bound or CPU work
+            </li>
+          </ol>
           <br />
-          ex:
-          <div class="code-block">
-            var express = require('express');
+          <ul>
+            NPM:
+      		  <li>
+              aweeeeesome
+            </li>
+            <li>
+      		    package.json - defines all the dependencies, app name, versions, scripts, etc. pretty awesome.
+            </li>
+            <li>
+              global vs local
+            </li>
+          </ul>
+          <br />
+          <ol>
+          	Express:
+            <li>
+              static keyword:
+              <ul>
+                <li>
+                  all images, css, (client-side) javascript, html files that do not get changed or modified.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Function:
+              <ul>
+                 <li>
+          		    Listens and responds to http requests.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Equivalents:
+              <ul>
+                <li>
+          		    IIS is the Microsoft equivalent of Node/Express. Similar to Glassfish as well with minor differences.
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <!-- Note on the static keyword -->
+          <br />
+          <h3>Note:</h3>
+          <p>
+            <div class="code-block">
+              var express = require('express');
+              <br />
+              var app = express();
+              <br />
+              app.use(express.static('public'));
+            </div>
             <br />
-            var app = express();
-            <br />
-            app.use(express.static('public'));</div><br />
-          we are defining the area in the filesystem that serves up imgs, javascript (client side), html, css, etc., but no server-side code. Essentially, the '<strong>public</strong>' folder holds only things that will potentially be served up to the client.
-        </p>
-      </ol>
+            <hr />
+            By using the static keyword
+            we are defining the area in the filesystem that serves up imgs, javascript (client side), html, css, etc., but no server-side code. Essentially, the '<strong>public</strong>' folder holds only things that will potentially be served up to the client.
+          </p>
+        </ol>
+      </div>
     </div>
     <footer></footer>
     <script>//js here or specify src="script.js"</script>
